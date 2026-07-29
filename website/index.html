@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawi Studios | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Live Header & Menu -->
+    <header id="header">
+        <div class="logo">
+            <i class="fas fa-code"></i> La<span>Win</span>.
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <span class="badge"><i class="fas fa-bolt"></i> Ultimate Web Agency</span>
+            <h1>We Build <span>Interactive & Live</span> Websites</h1>
+            <p>Your vision, our code. Elevating digital experiences with advanced animations and multi-page architecture.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn-primary">Explore Services <i class="fas fa-arrow-right"></i></a>
+                <a href="portfolio.html" class="btn-secondary">View Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title reveal">
+            <h2>Get In Touch</h2>
+            <p>Send us a live message instantly.</p>
+        </div>
+        <form id="contact-form" class="contact-form reveal">
+            <div class="input-group">
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required placeholder="Your Email">
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            <p id="form-status" class="form-status"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lawi Studios. Create by lawin issa.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
