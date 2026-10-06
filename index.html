@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Omar Perfume — گوڵاڤخانا عومەر</title>
+<link rel="icon" href="logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Noto+Kufi+Arabic:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script>
+  Babel.registerPreset('custom', {
+    presets: [[Babel.availablePresets['react'], { runtime: 'classic' }]]
+  });
+</script>
+
+<link rel="stylesheet" href="style.css?v=14.4">
+</head>
+<body>
+<div class="bg-ambient" id="bgAmbient">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+</div>
+<div id="root"></div>
+<script>
+  (function(){
+    var host = document.getElementById('bgAmbient');
+    var n = 16;
+    for(var i=0;i<n;i++){
+      var s = document.createElement('div');
+      s.className = 'sparkle';
+      s.style.left = (Math.random()*100) + '%';
+      s.style.top = (30 + Math.random()*65) + '%';
+      s.style.animationDuration = (5 + Math.random()*6) + 's';
+      s.style.animationDelay = (Math.random()*8) + 's';
+      host.appendChild(s);
+    }
+  })();
+</script>
+
+<script type="text/babel" data-presets="custom" src="app.js?v=14.4"></script>
+</body>
+</html>
